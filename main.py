@@ -10,6 +10,7 @@ driver = webdriver.Chrome('D:/chromedriver')
 driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html")
 driver.implicitly_wait(5)
 
+
 # code for handling with ad popup
 try:
     no_button = driver.find_element_by_class_name('at-cm-no-button')
@@ -17,6 +18,8 @@ try:
     print('ad skipped')
 except:
     print('No ad popup')
+
+
 
 sum1 = driver.find_element_by_id('sum1')
 sum2 = driver.find_element_by_id('sum2')
